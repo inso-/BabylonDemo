@@ -1,0 +1,27 @@
+platform :ios, '12.0'
+
+def rx_swift
+    pod 'RxSwift', '~> 4.1'
+end
+
+def rx_cocoa
+    pod 'RxCocoa', '~> 4.1'
+end
+
+target 'NetworkAPI' do
+    use_frameworks!
+    rx_swift
+    pod 'Alamofire'
+    pod 'RxAlamofire'
+end
+
+target 'Domain' do
+	use_frameworks!
+	rx_swift
+end
+
+target 'BabylonDemo' do
+	use_frameworks!
+	rx_swift
+	rx_cocoa
+end

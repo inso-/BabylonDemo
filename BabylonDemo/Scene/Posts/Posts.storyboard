@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4NC-Ua-LHV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Posts View Controller-->
+        <scene sceneID="YKF-HT-6bT">
+            <objects>
+                <viewController storyboardIdentifier="PostsViewController" id="4NC-Ua-LHV" customClass="PostsViewController" customModule="BabylonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gnO-XL-dj7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ptQ-6C-mOL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PostTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="52" id="wOL-h8-24k" customClass="PostTableViewCell" customModule="BabylonDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wOL-h8-24k" id="ECw-ec-0Wu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="51.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPH-lQ-GRU">
+                                                    <rect key="frame" x="25" y="11" width="325" height="29.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bPH-lQ-GRU" firstAttribute="leading" secondItem="ECw-ec-0Wu" secondAttribute="leadingMargin" constant="10" id="8Vb-B8-64l"/>
+                                                <constraint firstItem="bPH-lQ-GRU" firstAttribute="centerX" secondItem="ECw-ec-0Wu" secondAttribute="centerX" id="BKd-v1-mRT"/>
+                                                <constraint firstItem="bPH-lQ-GRU" firstAttribute="top" secondItem="ECw-ec-0Wu" secondAttribute="topMargin" id="YfK-xB-uKI"/>
+                                                <constraint firstItem="bPH-lQ-GRU" firstAttribute="centerY" secondItem="ECw-ec-0Wu" secondAttribute="centerY" id="uxc-J4-yjg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="bPH-lQ-GRU" id="UyV-MR-kW6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ptQ-6C-mOL" firstAttribute="leading" secondItem="svQ-jn-cfE" secondAttribute="leading" id="Vuh-p7-Bg0"/>
+                            <constraint firstItem="ptQ-6C-mOL" firstAttribute="top" secondItem="svQ-jn-cfE" secondAttribute="top" id="fje-sx-21s"/>
+                            <constraint firstItem="svQ-jn-cfE" firstAttribute="bottom" secondItem="ptQ-6C-mOL" secondAttribute="bottom" id="jFf-wR-S9L"/>
+                            <constraint firstItem="svQ-jn-cfE" firstAttribute="trailing" secondItem="ptQ-6C-mOL" secondAttribute="trailing" id="scC-mC-hk8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="svQ-jn-cfE"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ptQ-6C-mOL" id="Y30-wn-yPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLu-17-r1M" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="56.221889055472268"/>
+        </scene>
+    </scenes>
+</document>
