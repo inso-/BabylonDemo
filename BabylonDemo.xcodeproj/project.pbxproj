@@ -126,7 +126,7 @@
 		E65C0C5521BB6483001BDA45 /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
 		E65C0C6221BC0325001BDA45 /* CommentsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsNetwork.swift; sourceTree = "<group>"; };
 		E65C0C6521BC1E24001BDA45 /* UsersNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetwork.swift; sourceTree = "<group>"; };
-		E65C0C6821BC82A4001BDA45 /* CommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsUseCase.swift; path = ../../../../../../Users/inso/Documents/Project/BabylonDemo/Network/CommentsUseCase.swift; sourceTree = "<group>"; };
+		E65C0C6821BC82A4001BDA45 /* CommentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsUseCase.swift; path = ../../../../Users/inso/Documents/Project/BabylonDemo/Network/CommentsUseCase.swift; sourceTree = SOURCE_ROOT; };
 		E65C0C6A21BC8323001BDA45 /* CommentsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsUseCase.swift; sourceTree = "<group>"; };
 		E65C0C6C21BC8E29001BDA45 /* UserUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
 		E65C0C6E21BCB392001BDA45 /* UserUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
